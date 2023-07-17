@@ -1,0 +1,110 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)100%) ,url('/web-dev/netflix-clone/img/capa-hoc.jpg');
+    background-size: cover;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+    
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    transition: 1s ease all;
+}
+
+.botao i {
+    margin-right: 0.7em;
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.filme-principal .container{
+    max-width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+}
+
+.item:hover {
+    cursor: pointer;
+
+}
